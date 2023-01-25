@@ -280,6 +280,9 @@ actions:
     tar -xf itsm-ng-${VERSION}.tgz --directory /var/www
     rm -rf itsm-ng-${VERSION}.tgz
     chown -R www-data:www-data /var/www/itsm-ng
+    
+    wget https://raw.githubusercontent.com/Minzords/itsm-lxc/main/setup-itsm -O /usr/local/bin/setup-itsm
+    chmod +x /usr/local/bin/setup-itsm
 
     # Enable systemd-networkd
     systemctl enable systemd-networkd
