@@ -281,8 +281,12 @@ actions:
     rm -rf itsm-ng-${VERSION}.tgz
     chown -R www-data:www-data /var/www/itsm-ng
     
+    # Add setup-itsm script
     wget https://raw.githubusercontent.com/Minzords/itsm-lxc/main/setup-itsm -O /usr/local/bin/setup-itsm
     chmod +x /usr/local/bin/setup-itsm
+    
+    # Add autorun
+    echo -e "if [ ! -f /var/www/itsm-ng/config/config_db.php ]; then \n setup-itsm \nfi" >> /root/.bashrc
 
     # Enable systemd-networkd
     systemctl enable systemd-networkd
