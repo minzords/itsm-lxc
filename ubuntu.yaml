@@ -286,7 +286,7 @@ actions:
     chmod +x /usr/local/bin/setup-itsm
     
     # Add autorun
-    echo "if [ ! -f /var/www/itsm-ng/config/config_db.php ]; then setup-itsm fi" >> /root/.bashrc
+    echo "if [ ! -f /var/www/itsm-ng/config/config_db.php ]; then setup-itsm; fi" >> /root/.bashrc
 
     # Enable systemd-networkd
     systemctl enable systemd-networkd
