@@ -42,6 +42,7 @@ Install_ITSM(){
 
 
 Post_Install(){
+	rm /var/www/itsm-ng/install/install.php
 	whiptail --title "Installation Finish" --msgbox "L'installation is Finish\nITSM-NG is available on http://localhost" 8 78
 }
 
