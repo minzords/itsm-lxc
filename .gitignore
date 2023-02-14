@@ -1,6 +1,3 @@
-meta.tar.xz
-lxd.tar.xz
-meta.tar.xz
+*.tar.xz
 rootfs.squashfs
 rootfs.tar
-rootfs.tar.xz
