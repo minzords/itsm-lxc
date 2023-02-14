@@ -10,7 +10,7 @@ The command need to be launch with ROOT permission, you can launch this command 
 	$ distrobuilder build-lxc ubuntu.yaml
 Now, your lxc is builded his name ***rootfs.tar.xz*** you can rename the image name with this command:
 		
-		$ mv rootfs.tar.xz ItsmNG-VERSION.tar.xz
+	$ mv rootfs.tar.xz ItsmNG-VERSION.tar.xz
 ## FAQ
 ### Change ITSM-NG version
 you can change the ITSM-NG version in the template file, this file name ***ubuntu.yaml***
